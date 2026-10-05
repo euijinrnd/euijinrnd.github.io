@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not found | Euijin Jeong</title>
+  <meta name="robots" content="noindex">
+  <script>
+    // Old blog URLs (/blog/tags/..., /blog/categories/..., ...) moved to /blog_legacy/.
+    (function () {
+      var path = location.pathname;
+      if (/^\/blog\/(posts|categories|tags|archives|about|page\d+|feed\.xml|assets)(\/|$)/.test(path)) {
+        location.replace('/blog_legacy/' + path.slice('/blog/'.length) + location.search + location.hash);
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <main class="container">
+    <h1>Page not found</h1>
+    <p class="intro">Go to the <a href="/">homepage</a> or the <a href="/blog/">blog</a>.</p>
+  </main>
+</body>
+
+</html>
