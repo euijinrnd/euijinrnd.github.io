@@ -200,6 +200,19 @@ p {
   margin-top: 3rem;
 }
 
+/* Home: blog section */
+.section-link {
+  text-decoration: none;
+}
+
+.post-list.recent li:nth-child(n+6) {
+  display: none;
+}
+
+.post-list.recent time {
+  width: 6.5rem;
+}
+
 /* Blog: post body */
 .post-header {
   margin-bottom: 2.5rem;
