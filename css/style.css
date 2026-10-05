@@ -76,6 +76,26 @@ p {
   margin-bottom: 0;
 }
 
+.profile h1 {
+  margin-bottom: 1rem;
+}
+
+.profile-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.75rem;
+}
+
+.profile-photo {
+  flex: none;
+  display: block;
+  width: 140px;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
 .title {
   font-size: 0.875rem;
   color: var(--text-secondary);
@@ -333,6 +353,15 @@ footer a {
 @media (max-width: 640px) {
   .container {
     padding: 2.5rem 1.25rem 2.5rem;
+  }
+
+  .profile-row {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .profile-photo {
+    width: 120px;
   }
 
   h1 {
